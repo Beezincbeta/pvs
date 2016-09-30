@@ -163,13 +163,7 @@ $pmembersid= explode("\n",$txxt);
 
         }
     }else if ($text == "/help") {
-      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "به بخش راهنمای ربات پیامرسان ساز خوش آمدید
-      برای ساخت ربات ابتدا به ربات @botfather رفته وبرروی گزینه /newbot کلیک کنید وسپس برای ساخت ربات از شما نامی برای ربات میخواهد ونام موردنظر خودرابرای ان ارسال کنیدوسپس ازشما یک ایدی برای ربات میخواهد توجه کنید دراخر ایدی حتما کلمه botگزاشته شود
-      برای مثال
-      @PayamResanSazRoBot
-      خب بعد ازفرستادن ایدی موردنظر اگر ایدی قبلا ثبت نشده باشد یه متن حاوی توکن برای شما ارسال میکند که کافی است ان توکن را به ربات ما بفرستید تا ربات شما ساخته شود
-      باتشکر
-      @NobLest","parse_mode"=>"html"));
+      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "به بخش راهنمای ربات پیامرسان ساز خوش آمدید","parse_mode"=>"html"));
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
 
     $txtt = file_get_contents('tokenstoupdate.txt');
