@@ -1,6 +1,6 @@
 ﻿<?php
 
-define('BOT_TOKEN', '231117825:AAETGiZnn2e3iruQy0YMko-_y--qwUII9qo');
+define('BOT_TOKEN', '233509418:AAFvlIialCDalub4i9zyOhHqERHItOTKgVk');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -120,7 +120,7 @@ function processMessage($message) {
   if (isset($message['text'])) {
     // incoming text message
     $text = $message['text'];
-    $admin = 208094932;
+    $admin = 249010980;
     $matches = explode(' ', $text);
     $substr = substr($text, 0,7 );
     if (strpos($text, "/start") === 0) {
@@ -147,7 +147,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('members.txt',$aaddd);
 }
-        if($chat_id == 208094932)
+        if($chat_id == 249010980)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -190,7 +190,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 208094932) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 249010980) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -231,7 +231,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
  https://telegram.me/storebot?start=pvresanbot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot231117825:AAETGiZnn2e3iruQy0YMko-_y--qwUII9qo/"; 
+    $bot_url    = "https://api.telegram.org/bot233509418:AAFvlIialCDalub4i9zyOhHqERHItOTKgVk/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -315,7 +315,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
  https://telegram.me/storebot?start=pvresan_rbot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot231117825:AAETGiZnn2e3iruQy0YMko-_y--qwUII9qo/"; 
+    $bot_url    = "https://api.telegram.org/bot233509418:AAFvlIialCDalub4i9zyOhHqERHItOTKgVk/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -371,7 +371,7 @@ else{
 }
 
 
-define('WEBHOOK_URL', 'https://my-site.example.com/secret-path-for-webhooks/');
+define('WEBHOOK_URL', 'https://TWSALBOT-chtele.rhcloud.com/Luncher.php');
 
 if (php_sapi_name() == 'cli') {
   // if run from console, set or delete webhook
